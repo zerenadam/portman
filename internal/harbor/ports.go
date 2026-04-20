@@ -24,6 +24,9 @@ func FindPorts() []*Port {
 
 	for _, line := range lines[1:] {
 		fields := strings.Fields(line)
+		if len(fields) < 9 {
+			continue
+		}
 		ports = append(ports, &Port{
 			Process: fields[0],
 			PID: fields[1],
