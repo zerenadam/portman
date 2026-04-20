@@ -1,8 +1,8 @@
-package components
+package ui
 
 import "github.com/rivo/tview"
 
-func initHeader() *tview.TextView {
+func (a *App) initHeader() *tview.TextView {
 	logo := `
                       __                      
     ____  ____  _____/ /_____ ___  ____ _____ 
@@ -19,4 +19,5 @@ func initHeader() *tview.TextView {
 
 	return header
 }
+
 
