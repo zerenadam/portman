@@ -15,6 +15,7 @@ func initHeader() *tview.TextView {
 	SetText(logo). 
 	SetWrap(true). 
 	SetTextAlign(tview.AlignCenter)
+	header.SetBorder(true)
 
 	return header
 }
