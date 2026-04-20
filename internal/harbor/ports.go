@@ -38,6 +38,3 @@ func FindPorts() []*Port {
 	return ports
 }
 
-func (p *Port) Kill() error {
-	return exec.Command("kill", p.PID).Err
-}
